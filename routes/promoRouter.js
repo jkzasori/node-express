@@ -21,7 +21,7 @@ promoRouter.route('/')
 })
 .put((req, res, next) => {
 	res.statusCode = 403;
-	res.end('Put operation not support on /promotions');
+	res.end('PUT operation not support on /promotions');
 })
 .delete((req, res, next) => {
 	res.end('Deleting all promotions');

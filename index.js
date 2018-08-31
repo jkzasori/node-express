@@ -17,6 +17,9 @@ app.use('/dishes', dishRouter);
 const promoRouter = require('./routes/promoRouter');
 app.use('/promotions', promoRouter);
 
+const leaderRouter = require('./routes/leaderRouter');
+app.use('/leaders', leaderRouter);
+
 app.use(express.static(__dirname + '/public'));
 
 app.use((req, res, next) => {
